@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiabCare.</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<link rel="stylesheet" href="index.css">
+
+<!-- Google Font for Energetic Text -->
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+
+<link rel="icon" href="images/2nd img front.webp">
+</head>
+<body>
+
+
+<!-- Top Bar -->
+<div class="container-fluid py-2 border-bottom top-bar">
+  <div class="d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-flex align-items-center flex-wrap">
+      <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="PharmEasy Logo">
+      <span class="ms-3 fw-bold text-success">PharmEasy</span>
+      <span class="ms-3"><i class="bi bi-lightning-fill text-warning"></i> Express delivery to <a href="#" class="fw-bold text-dark">Select Pincode</a></span>
+    </div>
+    <div class="d-flex flex-wrap mt-2 mt-md-0">
+      <a href="#" class="me-3 fw-bold text-dark"><i class="bi bi-person text-success fs-5"></i> Hello, Log in</a>
+      <a href="#" class="me-3 fw-bold text-dark"><i class="bi bi-percent text-success fs-5"></i> Offers</a>
+      <a href="#" class="me-3 fw-bold text-dark"><i class="bi bi-cart3 text-success fs-5"></i> Cart</a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-3 flex-wrap justify-content-center">
+        <li class="nav-item"><a class="nav-link fw-bold" href="#">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link fw-bold dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About Testimonials</a></li>
+            <li><a class="dropdown-item" href="#">Why choose us?</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="about.html">Everything</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#">Product Detail</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#">Offers</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#">Categories</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Search Section -->
+<section class="search-section">
+  <div class="container">
+    <h4 class="mb-3 fw-bold text-center">What are you looking for?</h4>
+    <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap">
+      <i class="bi bi-search my-2 text-success fs-5"></i>
+      <input type="text" class="search-bar" placeholder="Search for Medicine">
+      <button class="search-btn">Search</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Bootstrap Carousel Slideshow with Hover Offer -->
+<div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" >
+  <div class="carousel-inner">
+
+   <!-- Slide 1 -->
+<div class="carousel-item active position-relative bg">
+  <img src="images/DecodeAgeNMN250_1.webp" class="d-block img-fluid" alt="Product 1">
+  <div class="offer-overlay">
+    <h4 class="fs-2">₹499</h4>
+    <p class="fs-3">🔥 20% OFF Today</p>
+    <p class="fs-5 text-center">Here’s your healthy lifestyle<br>Take the step today</p>
+  </div>
+</div>
+
+<!-- Slide 2 -->
+<div class="carousel-item position-relative bg-dark">
+  <img src="images/2 img.webp" class="d-block img-fluid" alt="Product 2">
+  <div class="offer-overlay">
+    <h4 class="fs-2">₹799</h4>
+    <p class="fs-3">✨ Special Discount</p>
+    <p class="fs-5 text-center">Boost your energy<br>Feel the transformation</p>
+  </div>
+</div>
+
+<!-- Slide 3 -->
+<div class="carousel-item position-relative bg-warning">
+  <img src="images/Diaba_Control_Img_3.webp" class="d-block img-fluid" alt="Product 3">
+  <div class="offer-overlay">
+    <h4 class="fs-2">₹999</h4>
+    <p class="fs-3">🛒 Buy 1 Get 1 Free</p>
+    <p class="fs-5 text-center">Live fit. Stay strong.<br>Your journey starts here</p>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<!-- 2nd slideshow  -->
+
+<div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center gap-5">
+        <div class="carousel-img" style="--hover-color:#FFC0CB;">
+          <img src="images/supplements.webp" class="img-fluid" alt="Supplements">
+        </div>
+        <div class="carousel-img" style="--hover-color:#ADD8E6;">
+          <img src="images/devices.webp" class="img-fluid" alt="Devices">
+        </div>
+        <div class="carousel-img" style="--hover-color:#FFE4B5;">
+          <img src="images/strips.webp" class="img-fluid" alt="Strips">
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center gap-5">
+        <div class="carousel-img" style="--hover-color:#E6E6FA;">
+          <img src="images/juices.webp" class="img-fluid" alt="Juices">
+        </div>
+        <div class="carousel-img" style="--hover-color:#FFF0F5;">
+          <img src="images/sugar free.webp" class="img-fluid" alt="Sugar Free">
+        </div>
+        <div class="carousel-img" style="--hover-color:#F0FFF0;">
+          <img src="images/cgm.webp" class="img-fluid" alt="CGM">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<h1 class="text-center">FEATURED COLLECTION </h1>
+
+<div class="container py-5">
+  <div class="row g-4">
+
+    <!-- Product Card 1 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/1st img in chnge.webp" class="main-img" alt="Main" />
+          <img src="images/img 1 chnge.webp" class="hover-img" alt="Hover" />
+        </div>
+        <div class="product-title">Carbamide Forte CALCIUM + MAGNESIUM + D3</div>
+        <div class="price-section">
+          <span class="fw-bold text-black">From ₹349</span>
+          <span class="original-price">₹540</span>
+          <span class="discount">Save ₹191</span>
+        </div>
+        <button class="add-cart-btn">Add to cart</button>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/2nd img front.webp" class="main-img" alt="Main" />
+          <img src="images/2nd img chnge.webp" class="hover-img" alt="Hover" />
+        </div>
+        <div class="product-title">Decode Age NMN 250 (30 Capsules)</div>
+        <div class="price-section">
+          <span class="fw-bold text-black">₹849</span>
+          <span class="original-price">₹1,200</span>
+          <span class="discount">Save ₹351</span>
+        </div>
+        <button class="add-cart-btn">Add to cart</button>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/3rd img front.webp" class="main-img" alt="Main" />
+          <img src="images/3rd img chnge.webp" class="hover-img" alt="Hover" />
+        </div>
+        <div class="product-title">Salmon Fish Oil (30 Capsules)</div>
+        <div class="price-section">
+          <span class="fw-bold text-black">₹849</span>
+          <span class="original-price">₹1,200</span>
+          <span class="discount">Save ₹351</span>
+        </div>
+        <button class="add-cart-btn">Add to cart</button>
+      </div>
+    </div>
+
+     <!-- Product Card 4 -->
+    <div class="col-md-6 col-lg-3">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="images/4th front.webp" class="main-img" alt="Main" />
+          <img src="images/4th chnge.webp" class="hover-img" alt="Hover" />
+        </div>
+        <div class="product-title">Vega omega  250 (30 Capsules)</div>
+        <div class="price-section">
+          <span class="fw-bold text-black">₹849</span>
+          <span class="original-price">₹1,200</span>
+          <span class="discount">Save ₹351</span>
+        </div>
+        <button class="add-cart-btn">Add to cart</button>
+      </div>
+    </div>
+
+    <section class="why-choose">
+    <div class="container">
+      <h2>Why Choose DiabCare?</h2>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="card why-card">
+            <img src="images/1why.webp" alt="One Stop Shop">
+            <div class="why-card-body">
+              <h5>One-Stop Shop for All Your Diabetes Essentials</h5>
+              <p>From glucometers to strips, supplements, and healthy snacks — DiabCare provides everything you need to manage diabetes, all in one place.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="card why-card">
+            <img src="images/2 why.webp" alt="Trusted Products">
+            <div class="why-card-body">
+              <h5>Trusted Healthcare Products</h5>
+              <p>We select only the highest-quality health products from reliable brands. Shop confidently knowing each item meets our standards for safety and effectiveness.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="card why-card">
+            <img src="images/3rd why.webp" alt="Home Delivery">
+            <div class="why-card-body">
+              <h5>Home Delivery of All Your Essentials</h5>
+              <p>Skip the pharmacy trips! Order online and get essentials delivered to your doorstep — your health routine stays on track without interruption.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="customer-spotlight">
+    <div class="container">
+      <h2>Customer Spotlight</h2>
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="images/ashish.webp" alt="Customer 1">
+              <div>
+                <h5>Ashish Mehra</h5>
+                <p>DiabCare Smart Glucometer</p>
+              </div>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"Convenient and trustworthy — my go-to for diabetes care!"</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="images/suresh.webp" alt="Customer 2">
+              <div>
+                <h5>Suresh Gupta</h5>
+                <p>Healthy Snacks Pack</p>
+              </div>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"Quality products, fast delivery, and great prices!"</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-12">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="images/akriti.webp" alt="Customer 3">
+              <div>
+                <h5>Akriti Sharma</h5>
+                <p>BP Monitor Kit</p>
+              </div>
+            </div>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">"DiabCare has everything I need to manage my health."</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5>Company</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Partner With Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5>Need Help</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5>Policy Info</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Security</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 mb-4">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom mt-4">
+      <p>© 2025 DiabCare. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
